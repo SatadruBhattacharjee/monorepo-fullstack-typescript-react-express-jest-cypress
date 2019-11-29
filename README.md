@@ -44,6 +44,12 @@ Run `npm start` for dev servers.
 
 Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
+## Storybook
+
+Run `npm run storybook` for running the storybook server.
+
+Navigate to http://localhost:4400/
+
 ## Build
 
 Run `npm run build` to build the project.
