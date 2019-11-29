@@ -16,12 +16,12 @@ This is a monorepo based project architecture using [Nx](https://nx.dev).
 
 ## Projects
 
+<p align="center"><img src="https://github.com/SatadruBhattacharjee/monorepo-fullstack-typescript-react-express-jest-cypress/blob/master/.github/dependency-graph.png" width="450"></p>
+
 - Frontend App
 - Backend API
 
 ### Modules
-
-<p align="center"><img src="https://github.com/SatadruBhattacharjee/monorepo-fullstack-typescript-react-express-jest-cypress/blob/master/.github/dependency-graph.png" width="450"></p>
 
 - ui : For UI React Components & jest tests
 
@@ -61,3 +61,7 @@ To run unit tests on individual modules
 ## Running end-to-end tests
 
 Run `npm run e2e` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
+
+### Note
+
+For monorepo based Library started using [Lerna](https://github.com/lerna/lerna), please refer the other boilerplate [Lib Boilerplate](https://github.com/SatadruBhattacharjee/monorepo-typescript-library-starter)

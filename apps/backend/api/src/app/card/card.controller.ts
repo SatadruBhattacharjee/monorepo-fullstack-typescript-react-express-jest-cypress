@@ -7,13 +7,13 @@ import { ICreditCard } from '@test-workspace/model';
 const creditCards: ICreditCard[] = [
   {
     name: 'Satadru',
-    number: 1111111111,
+    number: 6885622859,
     limit: 100,
     balance: 50
   },
   {
     name: 'Bhattacharjee',
-    number: 2222222222,
+    number: 1344361157,
     limit: 200,
     balance: 80
   }

@@ -10,7 +10,7 @@ describe('App', () => {
     expect(baseElement).toBeTruthy();
   });
 
-  it('should have a greeting as the title', () => {
+  it('should have a Credit Card System as the title', () => {
     const { getByText } = render(<App />);
 
     expect(getByText('Credit Card System')).toBeTruthy();

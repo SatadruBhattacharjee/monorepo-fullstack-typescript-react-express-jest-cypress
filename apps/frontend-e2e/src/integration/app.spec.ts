@@ -35,7 +35,7 @@ describe('frontend', () => {
     cy.wait(1000).then(() => {
       cy.get('button').click();
       cy.wait(3000).then(() => {
-        getCardCreateStatus().contains('The Card is added successfully');
+        getCardCreateStatus().contains('successfully');
       });
     });
 
