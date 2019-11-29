@@ -217,6 +217,21 @@
             "jestConfig": "libs/ui/jest.config.js",
             "tsConfig": "libs/ui/tsconfig.spec.json"
           }
+        },
+        "storybook": {
+          "builder": "@nrwl/storybook:storybook",
+          "options": {
+            "uiFramework": "@storybook/react",
+            "port": 4400,
+            "config": {
+              "configFolder": "libs/ui/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
         }
       }
     },

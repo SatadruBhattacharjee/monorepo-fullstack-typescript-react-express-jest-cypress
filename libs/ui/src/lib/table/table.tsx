@@ -15,22 +15,22 @@ export class Table extends React.Component<TableProps> {
     this.getKeys = this.getKeys.bind(this);
   }
 
-  getKeys = function() {
+  getKeys = () => {
     return (
       (this.props && this.props.data && Object.keys(this.props.data[0])) || []
     );
   };
 
-  getHeader = function() {
-    var keys = this.getKeys();
+  getHeader = () => {
+    const keys = this.getKeys();
     return keys.map((key: string, index: number) => {
       return <th key={key}>{key.toUpperCase()}</th>;
     });
   };
 
-  getRowsData = function() {
-    var items = this.props.data;
-    var keys = this.getKeys();
+  getRowsData = () => {
+    const items = this.props.data;
+    const keys = this.getKeys();
     return items.map((row: string, index: number) => {
       return (
         <tr key={index}>
