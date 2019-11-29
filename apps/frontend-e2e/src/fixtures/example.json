@@ -1,0 +1,6 @@
+{
+  "name": "Cypress Testing",
+  "validCardnumber": 6885622859,
+  "invalidCardnumber": 1234567890,
+  "cardLimit": 199
+}

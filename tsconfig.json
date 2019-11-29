@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@test-workspace/model": ["libs/model/src/index.ts"],
+      "@test-workspace/ui": ["libs/ui/src/index.ts"],
+      "@test-workspace/common": ["libs/common/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

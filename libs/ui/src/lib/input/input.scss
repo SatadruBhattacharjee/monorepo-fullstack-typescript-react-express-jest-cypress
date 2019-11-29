@@ -1,0 +1,47 @@
+// input.invalid__value,
+// textarea.invalid__value {
+//   border-color: red;
+// }
+
+// input.invalid__value::placeholder,
+// textarea.invalid__value::placeholder {
+//   color: red;
+// }
+$input-height: 25px;
+
+[data-prefix],
+[data-suffix] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
+  input {
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
+  &:before,
+  &:after {
+    height: $input-height;
+    line-height: $input-height - 2;
+    color: lighten(black, 60);
+  }
+}
+
+[data-prefix] {
+  &:before {
+    content: attr(data-prefix);
+    display: block;
+    padding: 0 0 0 10px;
+    border-top: 1px solid lighten(black, 80);
+    border-left: 1px solid lighten(black, 80);
+    border-bottom: 1px solid lighten(black, 80);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  input {
+    border-left: none;
+    padding-left: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

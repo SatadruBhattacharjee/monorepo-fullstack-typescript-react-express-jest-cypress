@@ -1,0 +1,32 @@
+.box {
+  width: 400px;
+  height: 20px;
+  border: 2px solid #000;
+  margin: 10px auto 15px;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.info {
+  background-color: #ddd;
+  border-color: #aaa;
+}
+
+.warning {
+  background-color: #fff484;
+  border-color: #dcc600;
+}
+
+.success {
+  background-color: #b9ffab;
+  border-color: #116400;
+  color: #116400;
+}
+
+.error {
+  background-color: #ebb1b1;
+  border-color: #973939;
+  color: #973939;
+}

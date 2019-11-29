@@ -1,0 +1,63 @@
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+  -moz-box-sizing: $box-model; // Firefox <= 19
+  box-sizing: $box-model;
+}
+
+/* Color settings */
+$formBg: #2c3e50;
+$formColor: #fff;
+$inputBg: #fff;
+$inputColor: #000;
+$buttonBg: #e67e22;
+$buttonColor: #fff;
+$errorMsgColor: #ff0000;
+
+/* Styles */
+form {
+  padding: 20px;
+  background: $formBg;
+  color: $formColor;
+  @include border-radius(4px);
+
+  label,
+  input,
+  button {
+    border: 0;
+    margin-bottom: 3px;
+    display: block;
+    width: 100%;
+  }
+  input {
+    height: 25px;
+    line-height: 25px;
+    background: $inputBg;
+    color: $inputColor;
+    padding: 0 6px;
+    @include box-sizing(border-box);
+  }
+  button {
+    height: 30px;
+    line-height: 30px;
+    background: $buttonBg;
+    color: $buttonColor;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .error {
+    color: $errorMsgColor;
+  }
+
+  button[disabled='disabled'],
+  button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
