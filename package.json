@@ -9,7 +9,7 @@
     "start:api": "nx serve backend-api",
     "build": "nx build",
     "test": "nx affected:test",
-    "test:model": "nx 'test' 'common'",
+    "test:common": "nx 'test' 'common'",
     "test:ui": "nx 'test' 'ui'",
     "test:frontend": "nx 'test' 'frontend'",
     "test:backend-api": "nx 'test' 'backend-api'",

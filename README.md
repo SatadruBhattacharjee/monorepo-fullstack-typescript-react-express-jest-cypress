@@ -46,7 +46,9 @@ Navigate to http://localhost:4200/. The app will automatically reload if you cha
 
 ## Build
 
-Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run build` to build the project.
+
+The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
@@ -57,6 +59,7 @@ To run unit tests on individual modules
 - `npm run test:model`
 - `npm run test:ui`
 - `npm run test:frontend`
+- `npm run test:backend-api`
 
 ## Running end-to-end tests
 
