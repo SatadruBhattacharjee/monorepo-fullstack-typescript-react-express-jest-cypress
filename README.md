@@ -2,6 +2,13 @@
 
 This is a monorepo based project architecture using [Nx](https://nx.dev).
 
+For getting some mock 10 digit valid credit card no, please use this [link](https://www.dcode.fr/luhn-algorithm)
+
+Cards:
+
+- `5304600520`
+- `7191299275`
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en/)
