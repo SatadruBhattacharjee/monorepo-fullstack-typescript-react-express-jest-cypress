@@ -4,24 +4,24 @@ import Controller from '../interfaces/controller.interface';
 import cardValidationMiddleware from '../middleware/cardValidation.middleware';
 import { ICreditCard } from '@test-workspace/model';
 
-const creditCards: ICreditCard[] = [
-  {
-    name: 'Satadru',
-    number: 6885622859,
-    limit: 100,
-    balance: 50
-  },
-  {
-    name: 'Bhattacharjee',
-    number: 1344361157,
-    limit: 200,
-    balance: 80
-  }
-];
-
 class CardController implements Controller {
   public path = '/api/v1/card';
   public router = express.Router();
+
+  private creditCards: ICreditCard[] = [
+    {
+      name: 'Satadru',
+      number: 6885622859,
+      limit: 100,
+      balance: 50
+    },
+    {
+      name: 'Bhattacharjee',
+      number: 1344361157,
+      limit: 200,
+      balance: 80
+    }
+  ];
 
   constructor() {
     this.initializeRoutes();
@@ -31,7 +31,7 @@ class CardController implements Controller {
     cards: ICreditCard[],
     cardNumber: number
   ): boolean => {
-    return cards.some((card: ICreditCard) => card.number === cardNumber);
+    return cards.some((card: ICreditCard) => card.number == cardNumber);
   };
 
   private initializeRoutes() {
@@ -43,7 +43,7 @@ class CardController implements Controller {
     request: express.Request,
     response: express.Response
   ) => {
-    response.send(creditCards);
+    response.send(this.creditCards);
   };
 
   private createCard = (
@@ -52,10 +52,10 @@ class CardController implements Controller {
     next: express.NextFunction
   ) => {
     const cardData: ICreditCard = request.body;
-    if (this.isDuplicateCardNumber(creditCards, cardData.number)) {
+    if (this.isDuplicateCardNumber(this.creditCards, cardData.number)) {
       next(new HttpException(400, `Duplicate Credit Card Number`));
     } else {
-      creditCards.push(cardData);
+      this.creditCards.push(cardData);
       response.send(cardData);
     }
   };

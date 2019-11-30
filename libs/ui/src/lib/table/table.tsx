@@ -31,7 +31,7 @@ export class Table extends React.Component<TableProps> {
   getRowsData = () => {
     const items = this.props.data;
     const keys = this.getKeys();
-    return items.map((row: string, index: number) => {
+    return items.map((row, index) => {
       return (
         <tr key={index}>
           <RenderRow key={index} data={row} keys={keys} />
