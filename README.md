@@ -30,20 +30,20 @@ Cards:
 
 ### Modules
 
-- ui : For UI React Components & jest tests
+- ***ui*** : For UI React Components & jest tests
 
   - Form
   - Input
   - Status Box
   - Table
 
-- common : Common Utilities & jest tests
+- ***common*** : Common Utilities & jest tests
 
   - CreditCardValidator : Used in both Frontend and API
   - HTTP : Wrapper around `fetch API`
   - Types
 
-- model : models, interfaces
+- ***model*** : Models, interfaces
 
 ## Development server
 
