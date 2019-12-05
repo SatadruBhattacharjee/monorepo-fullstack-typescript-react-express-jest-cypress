@@ -80,4 +80,4 @@ Run `npm run e2e` to execute the end-to-end tests via [Cypress](https://www.cypr
 
 ### Note
 
-For monorepo based Library started using [Lerna](https://github.com/lerna/lerna), please refer the other boilerplate [Lib Boilerplate](https://github.com/SatadruBhattacharjee/monorepo-typescript-library-starter)
+For monorepo based Library starter using [Lerna](https://github.com/lerna/lerna), please refer the other boilerplate [Lib Boilerplate](https://github.com/SatadruBhattacharjee/monorepo-typescript-library-starter)
