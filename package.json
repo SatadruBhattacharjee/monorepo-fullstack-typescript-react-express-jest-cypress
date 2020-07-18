@@ -79,7 +79,7 @@
     "eslint-plugin-react-hooks": "2.1.2",
     "html-loader": "*",
     "jest": "24.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "prettier": "1.18.2",
     "supertest": "^4.0.2",
     "to-string-loader": "*",
